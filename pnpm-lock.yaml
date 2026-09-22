@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@serafort/core':
-        specifier: link:../Javascript
-        version: link:../Javascript
+        specifier: github:Serafort/serafort-javascript-sdk#5a4964fc41f08754c174d29b4af73074df17a9df
+        version: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df
       fastify-plugin:
         specifier: ^5.0.1
         version: 5.1.0
@@ -21,6 +21,9 @@ importers:
       fastify:
         specifier: ^5.2.1
         version: 5.12.5
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       tsup:
         specifier: ^8.3.5
         version: 8.5.1(postcss@8.5.28)(typescript@5.9.3)
@@ -506,6 +509,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df':
+    resolution: {tarball: https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df}
+    version: 0.1.0
+
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
@@ -695,6 +702,11 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   ipaddr.js@2.5.0:
     resolution: {integrity: sha512-aq+t5NAc+cS6rZQQVWC2x98CPqGtKKTMDd4Gaodv0wShnItdKg/51djkGJ1hqH+Oy0ivDftCbSLCQob8zso01w==}
@@ -1306,6 +1318,8 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.63.4':
     optional: true
 
+  '@serafort/core@https://codeload.github.com/Serafort/serafort-javascript-sdk/tar.gz/5a4964fc41f08754c174d29b4af73074df17a9df': {}
+
   '@types/estree@1.0.9': {}
 
   '@types/node@22.20.4':
@@ -1541,6 +1555,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  husky@9.1.7: {}
 
   ipaddr.js@2.5.0: {}
 
